@@ -60,3 +60,9 @@ h2 {
     }
   }
 }
+
+.flag {
+  &:hover {
+    cursor: pointer;
+  }
+}

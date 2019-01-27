@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/flags/flags.css" rel=stylesheet type="text/css">
     
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -35,32 +36,56 @@
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
-      </a>
+      </a>    
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="en nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="pt nav-link js-scroll-trigger" href="#about">Sobre</a>
+            <a class="es nav-link js-scroll-trigger" href="#about">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            <a class="en nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            <a class="pt nav-link js-scroll-trigger" href="#education">Educação</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Projects</a>
+            <a class="es nav-link js-scroll-trigger" href="#education">Educación</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="en nav-link js-scroll-trigger" href="#experience">Experience</a>
+            <a class="pt nav-link js-scroll-trigger" href="#experience">Experiência</a>
+            <a class="es nav-link js-scroll-trigger" href="#experience">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="en nav-link js-scroll-trigger" href="#interests">Projects</a>
+            <a class="pt nav-link js-scroll-trigger" href="#interests">Projetos</a>
+            <a class="es nav-link js-scroll-trigger" href="#interests">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="en nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="pt nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+            <a class="es nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="en nav-link js-scroll-trigger" href="#awards">Awards</a>
+            <a class="pt nav-link js-scroll-trigger" href="#awards">Premiações</a>
+            <a class="es nav-link js-scroll-trigger" href="#awards">Premios</a>
           </li>
         </ul>
       </div>
+
+      <span>
+        <img id="pt" src="vendor/flags/blank.gif" class="flag flag-br" title="Brasilian Portuguese" />
+        <img id="en" src="vendor/flags/blank.gif" class="flag flag-us" title="English" />
+        <img id="es" src="vendor/flags/blank.gif" class="flag flag-es" title="Spanish" />
+      </span>
+
     </nav>
 
     <div class="container-fluid p-0">
@@ -70,11 +95,16 @@
           <h1 class="mb-0"><span class="text-primary">Débora</span>
             Moura
           </h1>
-          <div class="subheading mb-5">Brazil 🇧🇷 · Fortaleza, Ceará ·
+          <div class="subheading mb-5"><span class="pt">Brasil</span><span class="en">Brazil</span><span class="es">Brazil</span> 🇧🇷 · Fortaleza, Ceará ·
             <a href="mailto:deboramour4@gmail.com">deboramour4@gmail.com</a>
           </div>
-          <p class="mb-5">Hello, I'm a software developer and design lover. I worked with frontend and backend web technologies, also games in Unity. Currently I design and code iOS apps. I'm in senior year of Bachelor degree in Systems and Digital Medias. <br>
+          <p class="en mb-5">Hello, I'm a software developer and design lover. I worked with frontend and backend web technologies, also games in Unity. Currently I design and code iOS apps. I'm in senior year of Bachelor degree in Systems and Digital Medias. <br>
           Here you can see a little bit more about me, my studies, some projects and skills. <a href="mailto:deboramour4@gmail.com">Contact me</a> if you have further questions.</p>
+          <p class="pt mb-5">Olá, sou desenvolvedora de software e amante de design. Eu trabalhei com tecnologias web frontend e backend, também jogos com Unity. Atualmente eu faço o design e programo aplicativos iOS. Estou no último ano do bacharelado em Sistemas e Mídias Digitais. <br>
+          Aqui você pode ver um pouco mais sobre mim, meus estudos, alguns projetos e habilidades. <a href="mailto:deboramour4@gmail.com">Entre em contato</a> caso tenha mais dúvidas.</p>
+          <p class="es mb-5">Hola, soy un desarrollador de software y amante del diseño. Trabajé con tecnologías web frontend y backend, también juegos en Unity. Actualmente diseño y código aplicaciones iOS. Estoy en el último año de bachillerato en Sistemas y Medios Digitales. <br>
+          Aquí puedes ver un poco más sobre mí, mis estudios, algunos proyectos y habilidades. <a href="mailto:deboramour4@gmail.com">Ponte en contacto conmigo</a> si tienes más preguntas.</p>
+
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a target="_blank" href="https://www.github.com/deboramour4">
@@ -365,7 +395,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+    <script src="js/resume.js"></script>
 
   </body>
 

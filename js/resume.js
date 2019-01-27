@@ -25,4 +25,50 @@
     target: '#sideNav'
   });
 
+  // Translation ---------------------------------------------------------
+  var all_langs = ["pt", "es", "en"]
+  var lang = "en"
+
+  //Initial configuration of text and flag icons
+  selectLang(lang)
+
+  function selectLang(language) {
+    console.log("Language changed to "+language)
+    for (var l in all_langs) {
+      var actual_lang = all_langs[l]
+      if (actual_lang == language){ 
+        $("."+actual_lang).show()
+        $("#"+actual_lang).css('opacity','1')
+      } else {
+        $("."+actual_lang).hide()
+        $("#"+actual_lang).css('opacity','0.3')
+      }
+    }
+  }
+
+  // Hover flag icons
+  $("#pt,#es,#en").mouseover(function () {
+    fade($(this)[0].id, 1)
+  })
+  $("#pt,#es,#en").mouseout(function () {
+    fade($(this)[0].id, 0.3)
+  })
+  function fade(actual_lang,scale) {
+    if ( actual_lang != lang){ 
+      $("#"+actual_lang).css('opacity',scale)
+    }
+  }
+
+  //Select flag icon
+  $("#pt,#es,#en").click(function () {
+    var actual_lang = $(this)[0].id
+
+    if (actual_lang != lang) {
+      lang = actual_lang
+      fade(lang, 1)
+      selectLang(actual_lang)
+    }
+  })
+
 })(jQuery); // End of use strict
+
