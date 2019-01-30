@@ -4,6 +4,7 @@ body {
   @include body-font;
   padding-top: 54px;
   color: $gray-600;
+  background-color: $gray-100;
 }
 @media (min-width: 992px) {
   body {
@@ -71,6 +72,14 @@ button {
   &:focus {outline:0;}
 }
 
+#projects-print {
+  .lightbox {
+    img {
+      border: solid 1px $gray-200;
+      border-radius: 20px;
+    }
+  }
+}
 
 .projects-gallery {
     .lightbox {
@@ -81,7 +90,7 @@ button {
       border: solid 1px $gray-200;
       border-radius: 20px;
       text-align: center;
-      background-color: $gray-100;
+      background-color: $white;
 
       .image-logo {
         width: 30%;
@@ -194,7 +203,7 @@ button {
 }
 
 .md-show.md-effect-12 ~ .md-overlay {
-  background: $gray-100;
+  background: $white;
 } 
 
 .md-effect-12 .md-content h3,
@@ -221,6 +230,7 @@ button {
     border-radius: 25px;
     background-color: $gray-200;
     margin-bottom: 1rem;
+    margin-right: 5px;
   }
 }
 
@@ -254,6 +264,10 @@ ul.app-info {
       border: solid 1px $gray-200;
       border-radius: 15px;
     }
+  }
+  .app-link {
+    right: 4em;
+    position: absolute;
   }
 }
 
