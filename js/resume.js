@@ -114,7 +114,7 @@
           "textSmall": "Rede social para mulheres compartilharem suas experiências e fortalecerem-se umas as outras.",
           "textBig": "<p>Baseado no livro de Jessica Bennett “Clube da Luta Feminista” o app Arretadas se torna uma ferramenta de suporte para as reuniões de tais clubes.</p>"+
           "<p>Nele é possível criar um usuário; criar Clubes da Luta; postar atualizações fotos e mensagens sobre os Clubes; participar de Clubes; pesquisar por Clubes perto em cidades específicas.</p>",
-          "prints": 0
+          "prints": 6
         },
         {
           "id": "bikestyle",
@@ -128,24 +128,83 @@
           "textSmall": "App that shows all the cities of the world that have bike shared networks.",
           "textBig": "<p>People all over the world love to visit new cities and explore it. Those people love to learn more about the culture, culinary and history of a city.</p>"+
           "<p>BikeStyle it's an iOS app that shows all the cities of the world that have bike shared networks. It's gonna help both local residents and tourists to discover the beauty of their city by bike.</p>",
-          "prints": 0
-        // },
-        // {
-        //   "id": "",
-        //   "type": "app",
-        //   "name": "",
-        //   "link": "",
-        //   "link": {
-        //     "type": "git",
-        //     "src": ""
-        //   },
-        //   "tags": ["iOS development","",""],
-        //   "textSmall": "",
-        //   "textBig":
-        //   "<p></p>"+
-        //   "<p></p>",
-        //   "prints": 0
-        // },
+          "prints": 8
+        },
+        {
+          "id": "dressapp",
+          "type": "app",
+          "name": "Dressapp",
+          "link": {
+            "type": "git",
+            "src": ""
+          },
+          "tags": ["iOS development"],
+          "textSmall": "",
+          "textBig":
+          "<p>Some</p>"+
+          "<p>description</p>",
+          "prints": 4
+        },
+        {
+          "id": "goodquote",
+          "type": "app",
+          "name": "Good Quote",
+          "link": {
+            "type": "git",
+            "src": ""
+          },
+          "tags": ["iOS development"],
+          "textSmall": "",
+          "textBig":
+          "<p>Some</p>"+
+          "<p>description</p>",
+          "prints": 6
+        },
+        {
+          "id": "keepcalm",
+          "type": "app",
+          "name": "KeepCalm",
+          "link": {
+            "type": "git",
+            "src": ""
+          },
+          "tags": ["WWDC Scholarship", "Swift playgrounds", "Winner"],
+          "textSmall": "Keep Calm and draw a mandala.",
+          "textBig":
+          "<p>Hi</p>"+
+          "<p>Hello</p>",
+          "prints": 7
+        },
+        {
+          "id": "tomsparty",
+          "type": "game",
+          "name": "Festa no Tom",
+          "link": {
+            "type": "git",
+            "src": ""
+          },
+          "tags": ["Unity", "C#", "Game for kids"],
+          "textSmall": "",
+          "textBig":
+          "<p>Hi</p>"+
+          "<p>Hello</p>",
+          "prints": 14
+        },
+        {
+          "id": "alencarino",
+          "type": "game",
+          "name": "Alencarino",
+          "link": {
+            "type": "git",
+            "src": ""
+          },
+          "tags": ["Google Blockly","Javascript","HTML", "CSS"],
+          "textSmall": "",
+          "textBig":
+          "<p>Hi</p>"+
+          "<p>Hello</p>",
+          "prints": 6
+        //},
         // {
         //   "id": "",
         //   "type": "app",
@@ -173,11 +232,11 @@
       var projectsHTML = $("#"+type+"s-projects").html()
       projectsHTML += "<div class='col-sm-6 col-md-4'>"+
                   "<div class='lightbox md-trigger'>"+
-                    "<img src='img/projects/"+project["id"]+"-logo.png' class='image-logo'>"+
+                    "<img src='img/projects/"+project["id"]+"/logo.png' class='image-logo'>"+
                     "<h4>"+project["name"]+"</h4>"+
                     "<div class='chips'></div>"+
                     "<p>"+project["textSmall"]+"</p>"+
-                    "<button>Details</button>"+
+                    "<button>See details</button>"+
                   "</div>"+
               "</div>" 
       $("#"+type+"s-projects").html(projectsHTML)
@@ -220,7 +279,7 @@
       $("#project-name").text(project["name"])
     }
     function setProjectLogo(project) {
-      $("#project-img").attr("src", "img/projects/"+project["id"]+"-logo.png")
+      $("#project-img").attr("src", "img/projects/"+project["id"]+"/logo.png")
     }
     function setProjectDescription(project) {
       $("#project-textBig").html(project["textBig"])
@@ -256,8 +315,8 @@
       var printsHTML = ""
       for (var p = 1; p <= project["prints"]; p++) {
         printsHTML += "<div class='col-sm-6 col-md-3'>"+
-                          "<a class='lightbox' href='img/projects/"+projectID+"-"+p+".png'>"+
-                              "<img src='img/projects/"+projectID+"-"+p+".png'>"+
+                          "<a class='lightbox' href='img/projects/"+projectID+"/"+p+".png'>"+
+                              "<img src='img/projects/"+projectID+"/"+p+".png'>"+
                           "</a>"+
                       "</div>" 
       }
