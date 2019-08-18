@@ -29,6 +29,105 @@
   // keep this json sorted in the same way of site
   var all_projects = [
         {
+          "id": "bikestyle",
+          "type": "app",
+          "name": "BikeStyle",
+          "link": {
+            "type": "App Store",
+            "src": "https://apps.apple.com/us/app/bikestyle/id1455587148"
+          },
+          "tags": ["iOS development","Bikes","Swift"],
+          "textSmall": {
+            "en": "App that shows all the cities of the world that have bike shared networks.",
+            "pt": "App que mostra centenas de cidades do mundo que têm rede de bicicleta compartilhadas.",
+            "es": "App que muestra todas las ciudades del mundo que poseen redes compartidas en bicicleta."
+          },
+          "textBig": {
+            "en": "<p>People all over the world love to visit new cities and explore it. Those people love to learn more about the culture, culinary and history of a city.</p>"+
+                  "<p>BikeStyle it's an iOS app that shows all the cities of the world that have bike shared networks. It's gonna help both local residents and tourists to discover the beauty of their city by bike.</p>",
+            "pt": "<p>Pessoas de todo o mundo adoram visitar novas cidades e explorá-las. Essas pessoas adoram aprender mais sobre a cultura, a culinária e a história de uma cidade.</ p>" +
+                  "<p>BikeStyle é um aplicativo para iOS que mostra todas as cidades do mundo que possuem redes compartilhadas de bicicletas. Ajudará moradores e turistas a descobrir a beleza de sua cidade de bicicleta.</p>",
+            "es": "<p>Las personas de todo el mundo adoran visitar nuevas ciudades y explotarlas. Estas personas adoran aprender más sobre la cultura, la cocina y la historia de una ciudad. </p>" +
+                  "<p>BikeStyle es una aplicación para iOS que muestra todas las ciudades del mundo que poseen redes compartidas de bicicletas. Ayudará a los residentes y turistas a descubrir la belleza de su ciudad en bicicleta.</p>"
+          },
+          "prints": 5
+        },
+        {
+          "id": "kinoa",
+          "type": "app",
+          "name": "Kinoa",
+          "link": {
+            "type": "GitHub",
+            "src": "https://github.com/jullynobre/SlowNutrition"
+          },
+          "tags": ["iOS development","Nutrition", "Xibs"],
+          "textSmall": {
+            "en": "Kinoa helps you organize your week's eating plan to encourage healthy eating.",
+            "pt": "Kinoa ajuda a organizar o plano alimentar da semana, para estimular a alimentação saudável.",
+            "es": "Kinoa ayuda a organizar el plan de alimentación de la semana para fomentar una alimentación saludable."
+          },
+          "textBig": {
+            "en": "<p>Kinoa is an iOS app that seeks to help people organize their routine so they can have better eating habits. You can create eating plans, categorized dishes, and shopping lists.</p>" +
+                  "<p>It has reliable information from the Brazilian Ministry of Health about nutrition. Available for testing on TestFlight. </p>",
+            "pt": "<p>Kinoa é um aplicativo iOS que busca ajudar as pessoas a organizarem sua rotina de forma que consigam ter melhores hábitos alimentares. Pode-se criar planos alimentares, pratos categorizados e listas de compras.</p>"+ 
+                  "<p>Possui informações do Ministério da Saúde do Brasil sobre nutrição.  Disponível para teste no TestFlight.</p>",
+            "es": "<p>Kinoa es una aplicación para iOS que busca ayudar a las personas a organizar su rutina para que puedan tener mejores hábitos alimenticios. Puede crear planes de alimentación, platos categorizados y listas de compras.</p>" +
+                  "<p>Tiene información del Ministerio de Salud de Brasil sobre nutrición. Disponible para pruebas en TestFlight. </p>",
+          },
+          "prints": 7
+        },
+        {
+          "id": "dressupp",
+          "type": "app",
+          "name": "Dressupp",
+          "link": {
+            "type": "GitHub",
+            "src": ""
+          },
+          "tags": ["iOS development"],
+          "textSmall": {
+            "en": "App to help people manage their clothes and create outfits.",
+            "pt": "Aplicativo para ajudar as pessoas a administrar suas roupas e criar outfits.",
+            "es": "Aplicación para ayudar a las personas a administrar su ropa y crear outfits."
+          },
+          "textBig": {
+            "en": "<p>For many people its difficult to remember all the clothes they have in the wardrobe. With that, they stop using several clothes or even buy an identical piece because they don't remember that already had one. Look at the wardrobe and think about all possible outfits can be tiring.</p>"+
+                  "<p>Dressupp is an app that helps you catalog all your clothes and make combinations in a simple and practical way. You can save each piece of clothing, separate by color, create new outfits just by sliding left or right and save your favorite outfits.</p>"+
+                  "<p>With the help of Dressupp you will discover the potential of each one of your clothes and you will see that it doesnt take much to have several unique outfits.</p>",
+            "pt": "<p>Para muitas pessoas é dificil lembrar todas as peças de roupa que possui no guarda-roupas. Com isso, elas deixam de usar várias roupas ou até mesmo comprar uma peça idêntica, por não lembrar que já tinha uma. Olhar para o guarda-roupas e pensar em todos os outfits possíveis pode ser um trabalhoso.</p>"+ 
+                  "<p>O Dressupp é um app que te ajuda a catalogar todas as suas roupas e fazer combinações de uma forma simples e prática. Você pode salvar cada peça de roupa, separar por cor, criar novos outfits apenas deslizando para esquerda ou direita e salvar os seus outfits favoritos.</p>"+
+                  "<p>Com a ajuda do Dressupp é você descobrirá potencial de uma de suas roupas e verá que não é preciso muito para ter vários outfits únicos.</p>",
+            "es": "<p>Para muchas personas es difícil recordar todas las piezas de ropa que tiene en el guardarropa. Con eso, dejan de usar varias prendas o incluso comprar una pieza idéntica, por no recordar que ya tenía una.</p> "+
+                  "<p>Dressupp es una aplicación que te ayuda a catalogar toda su ropa y hacer combinaciones de una forma sencilla y práctica. Usted puede guardar cada prenda, separar por color, crear nuevos outfits apenas deslizándose hacia la izquierda o derecha y guardar sus outfits favoritos. </ p> "+
+                  "<p>Con la ayuda de Dressupp es usted descubrirá potencial de una de sus ropas y verá que no es necesario mucho para tener varios outfits únicos. </ p>",
+          },
+          "prints": 4
+        },
+        {
+          "id": "4champs",
+          "type": "app",
+          "name": "4Champs",
+          "link": {
+            "type": "GitHub",
+            "src": ""
+          },
+          "tags": ["ARKit 2.0","Games", "MultipeerSession", "iOS development"],
+          "textSmall": {
+            "en": "An augmented reality party game for iOS devices.",
+            "pt": "Um party game em realidade aumentada para dispositivos iOS.",
+            "es": "Un juego de realidad aumentada para dispositivos iOS."
+          },
+          "textBig": {
+            "en": "<p>In 4Champs each player is represented by a race car. Up to 4 players can be entered in the same match. The host of the match must scan a real-world plan and position the game map to start the match. </p> "+
+                  "<p>The first car that pick up the flag in the center of the map and safely back to its base wins. But be careful, because if the car falls off the map the player loses the flag! The game is still under development and will be available soon on the AppStore. </p> ",
+            "pt": "<p>No 4Champs cada jogador é representado por um carrinho de corrida. É possível entrar até 4 jogadores na mesma partida. O host da partida deve escanear um plano, do mundo real, e posicionar o mapa do jogo para iniciar a partida.</p>"+
+                  "<p>Ganha a partida o primeiro carrinho que conseguir pegar a bandeira que fica no centro do mapa e voltar a salvo para a sua base. Porém é preciso ter cuidado, pois caso o carrinho caia do mapa o jogador perde a bandeira! O jogo ainda está em desenvolvimento e em breve estará na AppStore.</p>",
+            "es": "<p>En 4Champs cada jugador está representado por un coche de carreras. Se pueden ingresar hasta 4 jugadores en el mismo partido. El anfitrión del partido debe escanear un plan del mundo real y colocar el mapa del juego para comenzar el partido. </p> "+
+                  "<p>El primer coche que puede levantar la bandera en el centro del mapa y volver a su base de forma segura gana. Pero ten cuidado, porque si el coche se cae del mapa, ¡el jugador pierde la bandera! El juego todavía está en desarrollo y pronto estará en la AppStore. </p> ",
+          },
+          "prints": 4
+        },
+        {
           "id": "ideabuilder",
           "type": "app",
           "name": "IdeaBuilder",
@@ -104,57 +203,6 @@
           "prints": 6
         },
         {
-          "id": "bikestyle",
-          "type": "app",
-          "name": "BikeStyle",
-          "link": {
-            "type": "GitHub",
-            "src": "https://github.com/deboramour4/bikestyle-app"
-          },
-          "tags": ["iOS development","Bikes","Swift"],
-          "textSmall": {
-            "en": "App that shows all the cities of the world that have bike shared networks.",
-            "pt": "App que mostra todas as cidades do mundo que possuem redes compartilhadas de bicicleta.",
-            "es": "App que muestra todas las ciudades del mundo que poseen redes compartidas en bicicleta."
-          },
-          "textBig": {
-            "en": "<p>People all over the world love to visit new cities and explore it. Those people love to learn more about the culture, culinary and history of a city.</p>"+
-                  "<p>BikeStyle it's an iOS app that shows all the cities of the world that have bike shared networks. It's gonna help both local residents and tourists to discover the beauty of their city by bike.</p>",
-            "pt": "<p>Pessoas de todo o mundo adoram visitar novas cidades e explorá-las. Essas pessoas adoram aprender mais sobre a cultura, a culinária e a história de uma cidade.</ p>" +
-                  "<p>BikeStyle é um aplicativo para iOS que mostra todas as cidades do mundo que possuem redes compartilhadas de bicicletas. Ajudará moradores e turistas a descobrir a beleza de sua cidade de bicicleta.</p>",
-            "es": "<p>Las personas de todo el mundo adoran visitar nuevas ciudades y explotarlas. Estas personas adoran aprender más sobre la cultura, la cocina y la historia de una ciudad. </p>" +
-                  "<p>BikeStyle es una aplicación para iOS que muestra todas las ciudades del mundo que poseen redes compartidas de bicicletas. Ayudará a los residentes y turistas a descubrir la belleza de su ciudad en bicicleta.</p>"
-          },
-          "prints": 8
-        },
-        {
-          "id": "dressupp",
-          "type": "app",
-          "name": "Dressupp",
-          "link": {
-            "type": "App Store",
-            "src": ""
-          },
-          "tags": ["iOS development"],
-          "textSmall": {
-            "en": "App to help people manage their clothes and create outfits.",
-            "pt": "Aplicativo para ajudar as pessoas a administrar suas roupas e criar outfits.",
-            "es": "Aplicación para ayudar a las personas a administrar su ropa y crear outfits."
-          },
-          "textBig": {
-            "en": "<p>For many people its difficult to remember all the clothes they have in the wardrobe. With that, they stop using several clothes or even buy an identical piece because they don't remember that already had one. Look at the wardrobe and think about all possible outfits can be tiring.</p>"+
-                  "<p>Dressupp is an app that helps you catalog all your clothes and make combinations in a simple and practical way. You can save each piece of clothing, separate by color, create new outfits just by sliding left or right and save your favorite outfits.</p>"+
-                  "<p>With the help of Dressupp you will discover the potential of each one of your clothes and you will see that it doesnt take much to have several unique outfits.</p>",
-            "pt": "<p>Para muitas pessoas é dificil lembrar todas as peças de roupa que possui no guarda-roupas. Com isso, elas deixam de usar várias roupas ou até mesmo comprar uma peça idêntica, por não lembrar que já tinha uma. Olhar para o guarda-roupas e pensar em todos os outfits possíveis pode ser um trabalhoso.</p>"+ 
-                  "<p>O Dressupp é um app que te ajuda a catalogar todas as suas roupas e fazer combinações de uma forma simples e prática. Você pode salvar cada peça de roupa, separar por cor, criar novos outfits apenas deslizando para esquerda ou direita e salvar os seus outfits favoritos.</p>"+
-                  "<p>Com a ajuda do Dressupp é você descobrirá potencial de uma de suas roupas e verá que não é preciso muito para ter vários outfits únicos.</p>",
-            "es": "<p>Para muchas personas es difícil recordar todas las piezas de ropa que tiene en el guardarropa. Con eso, dejan de usar varias prendas o incluso comprar una pieza idéntica, por no recordar que ya tenía una.</p> "+
-                  "<p>Dressupp es una aplicación que te ayuda a catalogar toda su ropa y hacer combinaciones de una forma sencilla y práctica. Usted puede guardar cada prenda, separar por color, crear nuevos outfits apenas deslizándose hacia la izquierda o derecha y guardar sus outfits favoritos. </ p> "+
-                  "<p>Con la ayuda de Dressupp es usted descubrirá potencial de una de sus ropas y verá que no es necesario mucho para tener varios outfits únicos. </ p>",
-          },
-          "prints": 4
-        },
-        {
           "id": "goodquote",
           "type": "app",
           "name": "Good Quote",
@@ -213,7 +261,7 @@
             "type": "GitHub",
             "src": "https://github.com/deboramour4/toms-party-unity"
           },
-          "tags": ["Unity", "C#", "Game for kids"],
+          "tags": ["Unity", "C#", "Games","Kids", "Music"],
           "textSmall": {
             "en": "",
             "pt": "",
@@ -246,34 +294,6 @@
             "es":""
           },
           "prints": 6
-        // },
-//         {
-//           "id": "",
-//           "type": "app",
-//           "name": "",
-//           "link": "",
-//           "link": {
-//             "type": "GitHub",
-//             "src": ""
-//           },
-//           "tags": ["iOS development","",""],
-//           "textSmall": {
-//             "en": "<p></p>"+
-//                   "<p></p>",
-//             "pt": "<p></p>"+
-//                   "<p></p>",
-//             "es": "<p></p>"+
-//                   "<p></p>",
-//           }
-//           "textBig": {
-//             "en": "<p></p>"+
-//                   "<p></p>",
-//             "pt": "<p></p>"+
-//                   "<p></p>",
-//             "es": "<p></p>"+
-//                   "<p></p>",
-//           }
-//           "prints": 0
         }]
 
    // Translation ---------------------------------------------------------
