@@ -1,8 +1,23 @@
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli/Muli-Regular.ttf"); }
+@font-face {
+  font-family: "Muli";
+  font-weight: bold;
+  src: url("../fonts/Muli/Muli-Bold.ttf"); }
+@font-face {
+  font-family: "Kollektif";
+  src: url("../fonts/Kollektif/Kollektif.ttf"); }
+@font-face {
+  font-family: "Kollektif";
+  font-weight: bold;
+  src: url("../fonts/Kollektif/Kollektif-Bold.ttf"); }
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Muli', serif;
   padding-top: 54px;
   color: #868e96;
-  background-color: #fbfcfd; }
+  background-color: #fbfcfd;
+  font-size: 1.03rem; }
 
 @media (min-width: 992px) {
   body {
@@ -14,35 +29,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: 'Kollektif', serif;
+  font-weight: bold;
   color: #343a40; }
 
 h1 {
   font-size: 6rem;
-  line-height: 5.5rem; }
+  line-height: 5.5rem;
+  letter-spacing: -2px; }
 
 h2 {
   font-size: 3.5rem; }
 
 .subheading {
-  text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Kollektif', serif;
   font-size: 1.35rem; }
 
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #f55555; }
+    color: #8a05be; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #f55555; }
+    color: #8a05be; }
 
 .flag:hover {
   cursor: pointer; }
@@ -53,6 +67,10 @@ button:focus {
 #projects-print .lightbox img {
   border: solid 1px #ebeeef;
   border-radius: 20px; }
+
+#link-img {
+  max-width: 40px;
+  margin: 0px 5px; }
 
 .projects-gallery .lightbox {
   padding: 30px;
@@ -70,14 +88,14 @@ button:focus {
     border: solid 1px #e9ecef; }
   .projects-gallery .lightbox button {
     background: none;
-    border: 2px solid #f55555;
+    border: 2px solid #8a05be;
     border-radius: 5px;
-    color: #f55555;
+    color: #8a05be;
     display: block;
     font-size: .8em;
     font-weight: bold;
     margin: 1em auto;
-    padding: .8em 2em;
+    padding: .5em 1.2em;
     position: relative;
     text-transform: uppercase; }
     .projects-gallery .lightbox button:hover {
@@ -85,7 +103,7 @@ button:focus {
       .projects-gallery .lightbox button:hover:after {
         width: 100%; }
     .projects-gallery .lightbox button::before, .projects-gallery .lightbox button::after {
-      background: #f55555;
+      background: #8a05be;
       content: '';
       position: absolute;
       z-index: -1;
@@ -215,6 +233,17 @@ ul.app-info {
 ::-webkit-scrollbar-thumb {
   background-color: #adb5bd; }
 
+.circle-rate ul li {
+  margin: 0px 5px;
+  font-size: .7em;
+  display: inline;
+  color: #dee2e6; }
+  .circle-rate ul li .filled {
+    color: #8a05be; }
+
+.language-name {
+  display: inline-flex; }
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase; }
@@ -255,7 +284,8 @@ section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important; }
   section.resume-section .resume-item .resume-date {
-    min-width: none; }
+    min-width: none;
+    font-weight: bold; }
 
 @media (min-width: 768px) {
   section.resume-section {
@@ -267,14 +297,14 @@ section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important; } }
 .bg-primary {
-  background-color: #f55555 !important; }
+  background-color: #8a05be !important; }
 
 .text-primary {
-  color: #f55555 !important; }
+  color: #8a05be !important; }
 
 a {
-  color: #f55555; }
+  color: #8a05be; }
   a:hover, a:focus, a:active {
-    color: #f55555; }
+    color: #8a05be; }
 
 /*# sourceMappingURL=resume.css.map */

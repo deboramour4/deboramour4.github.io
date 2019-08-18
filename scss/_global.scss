@@ -1,10 +1,30 @@
 // Global styling for this template
 
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Muli";
+  font-weight: bold;
+  src: url("../fonts/Muli/Muli-Bold.ttf");
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("../fonts/Kollektif/Kollektif.ttf");
+}
+@font-face {
+  font-family: "Kollektif";
+  font-weight: bold;
+  src: url("../fonts/Kollektif/Kollektif-Bold.ttf");
+}
+
 body {
   @include body-font;
   padding-top: 54px;
   color: $gray-600;
   background-color: $gray-100;
+  font-size: 1.03rem;
 }
 @media (min-width: 992px) {
   body {
@@ -20,14 +40,15 @@ h4,
 h5,
 h6 {
   @include heading-font;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: bold;
+  //text-transform: uppercase;
   color: $gray-800;
 }
 
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
+  letter-spacing: -2px;
 }
 
 h2 {
@@ -35,7 +56,7 @@ h2 {
 }
 
 .subheading {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: 500;
   @include heading-font;
   font-size: 1.35rem;
@@ -81,6 +102,11 @@ button {
   }
 }
 
+#link-img {
+    max-width: 40px;
+    margin: 0px 5px;
+}
+
 .projects-gallery {
     .lightbox {
       padding: 30px;
@@ -101,9 +127,9 @@ button {
 
       button {
         background: none;
-        border: 2px solid #f55555;
+        border: 2px solid $primary;
         border-radius: 5px;
-        color: #f55555;
+        color: $primary;
         display: block;
         font-size: .8em;
         font-weight: bold;
@@ -120,7 +146,7 @@ button {
         }
 
         &::before, &::after {
-          background: #f55555;
+          background: $primary;
           content: '';
           position: absolute;
           z-index: -1;
@@ -284,4 +310,22 @@ ul.app-info {
 
 ::-webkit-scrollbar-thumb {
   background-color: $gray-500;
+}
+
+.circle-rate {
+  ul {
+    li {
+      margin: 0px 5px;
+      font-size: .7em;
+      display: inline;
+      color: $gray-300;
+      .filled {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.language-name {
+  display: inline-flex;
 }
