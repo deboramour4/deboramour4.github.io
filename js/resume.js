@@ -36,7 +36,7 @@
             "type": "App Store",
             "src": "https://apps.apple.com/us/app/bikestyle/id1455587148"
           },
-          "tags": ["iOS development","Bikes","Swift"],
+          "tags": ["iOS development","Bikes","Swift", "MapKit", "REST API", "Dark mode"],
           "textSmall": {
             "en": "App that shows all the cities of the world that have bike shared networks.",
             "pt": "App que mostra centenas de cidades do mundo que têm rede de bicicleta compartilhadas.",
@@ -53,6 +53,27 @@
           "prints": 5
         },
         {
+          "id": "clin",
+          "type": "app",
+          "name": "Clin Lavagens",
+          "link": {
+            "type": "App Store",
+            "src": "https://apps.apple.com/us/app/clin-lavagem-de-roupas/id1478623968"
+          },
+          "tags": ["iOS development","Swift", "View Code", "MapKit", "MVVM", "RXSwift"],
+          "textSmall": {
+            "en": "App that shows all the cities of the world that have bike shared networks.",
+            "pt": "App que mostra centenas de cidades do mundo que têm rede de bicicleta compartilhadas.",
+            "es": "App que muestra todas las ciudades del mundo que poseen redes compartidas en bicicleta."
+          },
+          "textBig": {
+            "en": "<p>Clin is an iOS app that offers laundry services at an affordable price. In Clin the user can request a wash and the platform selects a registered washer to provide the service. The washers are ordinary people who want to make extra income with their idle washing machine.</p>",
+            "pt": "<p>Clin é um aplicativo iOS que oferece serviços de lavagem de roupas por um preço acessível. No Clin o usuário pode solicitar uma lavagem e a plataforma seleciona um lavador cadastrado para prestar o serviço. Os lavadores são pessoas comuns que querem fazer renda extra com sua máquina de lavar.</p>",
+            "es": "<p>Clin es una aplicación para iOS que ofrece servicios de lavandería a un precio asequible. En Clin, el usuario puede solicitar un lavado y la plataforma selecciona una lavadora registrada para proporcionar el servicio. Las lavadoras son personas comunes que desean obtener ingresos adicionales de su lavadora.</p>"
+          },
+          "prints": 5
+        },
+        {
           "id": "kinoa",
           "type": "app",
           "name": "Kinoa",
@@ -60,7 +81,7 @@
             "type": "GitHub",
             "src": "https://github.com/jullynobre/SlowNutrition"
           },
-          "tags": ["iOS development","Nutrition", "Xibs"],
+          "tags": ["iOS development","Nutrition", "Xibs", "Custom components", "Swift Lint", "Travis CI"],
           "textSmall": {
             "en": "Kinoa helps you organize your week's eating plan to encourage healthy eating.",
             "pt": "Kinoa ajuda a organizar o plano alimentar da semana, para estimular a alimentação saudável.",
@@ -84,7 +105,7 @@
             "type": "GitHub",
             "src": ""
           },
-          "tags": ["iOS development"],
+          "tags": ["iOS development", "CoreML", "CreateML"],
           "textSmall": {
             "en": "App to help people manage their clothes and create outfits.",
             "pt": "Aplicativo para ajudar as pessoas a administrar suas roupas e criar outfits.",
@@ -210,7 +231,7 @@
             "type": "GitHub",
             "src": "https://github.com/deboramour4/good-quote-app"
           },
-          "tags": ["iOS development"],
+          "tags": ["iOS development", "Objective-C","UIKit", "REST API"],
           "textSmall": {
             "en": "Find a quote from artists and writers.",
             "pt": "Encontre uma citação de artistas e escritores.",
@@ -254,6 +275,27 @@
           "prints": 7
         },
         {
+          "id": "petsite",
+          "type": "site",
+          "name": "Site PET Computação",
+          "link": {
+            "type": "Website",
+            "src": "http://www.petcomp.ufc.br"
+          },
+          "tags": ["HTML", "CSS", "Materialize CSS","JS", "Jquery", "PHP", "MySQL"],
+          "textSmall": {
+            "en": "",
+            "pt": "",
+            "es":""
+          },
+          "textBig": {
+            "en":"",
+            "pt":"",
+            "es":""
+          },
+          "prints": 5
+        },
+        {
           "id": "tomsparty",
           "type": "game",
           "name": "Festa no Tom",
@@ -268,9 +310,9 @@
             "es":""
           },
           "textBig": {
-            "en":"",
-            "pt":"",
-            "es":""
+            "en":"A game to introduce Musical Theory for children. Research was carried out to better understand the interaction of children, between 4 and 6 years old, with smartphones and tablets, in order to achieve greater immersion in the game and achieve the educational objectives proposed in it. Information was also sought about what draws their attention, what colors to use, the best narrative strategies to be incorporated into the game, the interface layout most familiar to children.",
+            "pt":"Um jogo de introdução à Teoria Musical para crianças. Foram realizadas pesquisas para compreender melhor a interação de crianças, entre 4 e 6 anos, com smartphones e tablets, a fim de alcançar maior imersão no jogo e  atingir os objetivos pedagógicos nele propostos. Buscou-se também informações sobre o que as chama a atenção, quais cores utilizar, as melhores estratégias de narrativa a serem incorporadas no jogo, layout da interface mais familiar para as crianças.",
+            "es":"Un juego de introducción a la teoría de la música para niños. Se llevó a cabo una investigación para comprender mejor la interacción de los niños, entre 4 y 6 años, con teléfonos inteligentes y tabletas, con el fin de lograr una mayor inmersión en el juego y alcanzar los objetivos educativos propuestos en él. También se buscó información sobre qué les llama la atención, qué colores usar, las mejores estrategias narrativas para incorporar al juego, el diseño de la interfaz más familiar para los niños."
           },
           "prints": 14
         },
@@ -279,8 +321,8 @@
           "type": "game",
           "name": "Alencarino",
           "link": {
-            "type": "GitHub",
-            "src": ""
+            "type": "Website",
+            "src": "http://horadocodigo.ufc.br/alencarino/appengine/index.html"
           },
           "tags": ["Google Blockly","Javascript","HTML", "CSS"],
           "textSmall": {
@@ -336,7 +378,7 @@
     function createCard(type, project) {
         var projectsHTML = $("#"+type+"s-projects").html()
         projectsHTML += "<div class='col-sm-6 col-md-4'>"+
-                    "<div class='lightbox md-trigger'>"+
+                    "<div class='lightbox md-trigger' id='"+project["id"]+"'>"+
                       "<img src='img/projects/"+project["id"]+"/logo.png' class='image-logo'>"+
                       "<h4>"+project["name"]+"</h4>"+
                       "<div class='chips'></div>"+
