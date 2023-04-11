@@ -340,7 +340,7 @@
 
    // Translation ---------------------------------------------------------
   var all_langs = ["pt", "es", "en"]
-  var lang = "en"
+  var lang = "pt"
 
   //Initial configuration of text and flag icons
   selectLang(lang)
